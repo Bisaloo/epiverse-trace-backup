@@ -5,10 +5,10 @@ on:
   schedule:
     - cron:  '37 2 * * 6'
 
-name: R-CMD-check
+name: backup-and-upload
 
 jobs:
-  back-and-upload:
+  backup-and-upload:
     runs-on: ubuntu-latest
     env:
       GITHUB_PAT: ${{ secrets.GITHUB_TOKEN }}
