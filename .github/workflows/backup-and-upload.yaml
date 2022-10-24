@@ -23,7 +23,7 @@ jobs:
 
       - name: Create archives
         env:
-          GITHUB_PAT: ${{ secrets.BACKUP_FINE_PAT }}
+          GITHUB_PAT: ${{ secrets.BACKUP_PAT }}
         run: |
           gitcellar::download_organization_repos(
             "epiverse-trace",
