@@ -175,16 +175,22 @@
     },
     "gh": {
       "Package": "gh",
-      "Version": "1.3.1",
-      "Source": "Repository",
-      "Repository": "RSPM",
-      "Hash": "b6a12054ee13dce0f6696c019c10e539",
+      "Version": "1.3.1.9000",
+      "Source": "GitHub",
+      "RemoteType": "github",
+      "RemoteHost": "api.github.com",
+      "RemoteUsername": "r-lib",
+      "RemoteRepo": "gh",
+      "RemoteRef": "main",
+      "RemoteSha": "310bbade678e5768af1a63e6a4b518089f4fe727",
+      "Hash": "1fb23c00faec0258b7931fccd8b48a48",
       "Requirements": [
         "cli",
         "gitcreds",
         "httr",
         "ini",
-        "jsonlite"
+        "jsonlite",
+        "rlang"
       ]
     },
     "gitcellar": {
