@@ -26,7 +26,7 @@ jobs:
           GITHUB_PAT: ${{ secrets.BACKUP_PAT }}
         run: |
           gitcellar::download_organization_repos(
-            "epiverse-trace",
+            c("epiverse-trace", "epiverse-connect"),
             dest_folder = glue::glue("{Sys.Date()}-backup")
           )
         shell: Rscript {0}
