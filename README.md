@@ -3,7 +3,7 @@
 status](https://github.com/epiverse-trace-bot/epiverse-trace-backup/workflows/backup-and-upload/badge.svg)](https://github.com/epiverse-trace-bot/epiverse-trace-backup/actions)
 <!-- badges: end -->
 
-This repository contains the automation code for weekly backups of the [`epiverse-TRACE` GitHub organisation](https://github.com/epiverse-trace).
+This repository contains the automation code for weekly backups of the [`Epiverse-TRACE`](https://github.com/epiverse-trace) and [`Epiverse-CONNNECT`](https://github.com/epiverse-trace) GitHub organisation].
 
 This is achieved by [replicating the back-up infrastructure from rOpenSci](https://discuss.ropensci.org/t/backing-up-github-organisation-with-gitcellar/3153) documented in the ["Safeguards and Backups for GitHub Organizations" blog post](Safeguards and Backups for GitHub Organizations).
 
