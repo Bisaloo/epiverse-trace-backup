@@ -1,0 +1,16 @@
+Package: epiversebackup
+Title: Your Package Title in Titlecase
+Version: 0.0.1
+Authors@R: 
+  c(
+    person(given = "Hugo", family = "Gruson", , email = "hugo.gruson+R@normasup.org", role = c("aut", "cre"))
+  )
+Description: Weekly backup of Epiverse-TRACE and Epiverse-CONNECT GitHub organizations
+License: MIT + file LICENSE
+Encoding: UTF-8
+Imports:
+  aws.s3,
+  fs,
+  gitcellar,
+  glue,
+  purrr
