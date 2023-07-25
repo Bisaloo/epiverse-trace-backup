@@ -9,8 +9,6 @@ Description: Weekly backup of Epiverse-TRACE and Epiverse-CONNECT GitHub organiz
 License: MIT + file LICENSE
 Encoding: UTF-8
 Imports:
-  aws.s3,
-  fs,
-  gitcellar,
-  glue,
-  purrr
+  gitcellar
+Remotes:
+  ropensci-org/gitcellar
