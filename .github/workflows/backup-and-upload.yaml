@@ -21,17 +21,13 @@ jobs:
 
       - uses: r-lib/actions/setup-renv@v2
 
-      - name: Get date
-        id: date
-        run: echo "TODAY=$(date +'%Y-%m-%d')" >> $GITHUB_OUTPUT
-
       - name: Create archives
         env:
           GITHUB_PAT: ${{ secrets.BACKUP_PAT }}
         run: |
           gitcellar::download_organization_repos(
             c("epiverse-trace", "epiverse-connect"),
-            dest_folder = "${{ steps.date.outputs.TODAY }}-backup"
+            dest_folder = "backup"
           )
         shell: Rscript {0}
 
@@ -41,5 +37,5 @@ jobs:
 
       - uses: 'google-github-actions/upload-cloud-storage@v1'
         with:
-          path: '${{ steps.date.outputs.TODAY }}-backup'
-          destination: 'epiverse-backups'
+          path: 'backup'
+          destination: 'epiverse-trace-backups'
