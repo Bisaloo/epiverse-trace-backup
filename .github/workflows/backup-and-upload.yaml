@@ -39,3 +39,4 @@ jobs:
         with:
           path: 'backup'
           destination: 'epiverse-trace-backups'
+          parent: false
